@@ -1,0 +1,16 @@
+title: CS1103
+description: Java 2
+template:
+  repo: cs1103-template
+  name: cs1103
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
